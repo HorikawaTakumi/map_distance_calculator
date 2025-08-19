@@ -1,0 +1,23 @@
+@use '../base/variables' as *;
+
+.container {
+    background: $bg-white;
+    border-radius: $border-radius-xl;
+    padding: $spacing-xxl;
+    box-shadow: $shadow-container;
+    min-height: calc(100vh - 40px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: $spacing-xl;
+}
+
+label {
+    display: block;
+    margin-bottom: $spacing-sm;
+    font-weight: $font-weight-semibold;
+    color: $text-tertiary;
+}

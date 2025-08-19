@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "sass": "^1.69.0",
+    "terser": "^5.43.1"
+  },
+  "scripts": {
+    "build:js": "cat src/js/config/*.js src/js/utils/*.js src/js/api/*.js src/js/map/*.js src/js/ui/*.js src/js/main.js | npx terser -c -m -o dist/app.min.js",
+    "build:css": "npx sass src/scss/main.scss --style=compressed --no-source-map | npx cleancss -o dist/style.min.css",
+    "build": "npm run build:js && npm run build:css",
+    "clean": "rm -f dist/app.js dist/style.css dist/style.css.map",
+    "dev": "eval \"$(~/.local/bin/mise activate zsh)\" && uv run python server.py",
+    "start": "npm run build && npm run dev"
+  }
+}

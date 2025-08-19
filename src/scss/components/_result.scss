@@ -1,0 +1,44 @@
+@use '../base/variables' as *;
+
+.result {
+    margin-top: $spacing-xxl;
+    padding: $spacing-xl;
+    background: $bg-light;
+    border-radius: $border-radius-lg;
+    border-left: 4px solid $primary-color;
+
+    &.error {
+        background: $error-bg;
+        border-left-color: $error-color;
+        color: $warning-color;
+    }
+
+    &.loading {
+        text-align: center;
+        color: $primary-color;
+    }
+}
+
+.coordinate {
+    font-family: 'Courier New', monospace;
+    background: $bg-coordinate;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $spacing-xs;
+    font-size: 0.9em;
+}
+
+.distance-highlight {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $primary-color;
+    margin: $spacing-md 0;
+}
+
+.calculation-method {
+    margin-top: $spacing-md;
+    padding: $spacing-sm;
+    background: $bg-method;
+    border-radius: $spacing-xs;
+    font-size: 0.85em;
+    color: $text-method;
+}

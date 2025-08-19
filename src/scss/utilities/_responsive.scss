@@ -1,0 +1,76 @@
+@use '../base/variables' as *;
+
+// Small height adjustments
+@media (max-height: $small-height-max) {
+    .container {
+        padding: $spacing-xl;
+        min-height: calc(100vh - 40px);
+    }
+
+    body {
+        padding: $spacing-md;
+    }
+
+    .map-container {
+        height: $map-height-small;
+        min-height: $map-min-height-small;
+    }
+}
+
+@media (max-height: $tablet-height-max) {
+    .map-container {
+        height: 200px;
+        min-height: 180px;
+    }
+
+    .api-setup-container,
+    .api-management-container {
+        min-height: $api-container-min-height-small;
+        padding: $spacing-lg;
+    }
+}
+
+// Mobile device adjustments
+@media (max-width: $mobile-max) {
+    body {
+        padding: $spacing-md;
+    }
+
+    .container {
+        padding: $spacing-lg;
+        border-radius: $spacing-md;
+    }
+
+    .map-container {
+        margin-top: $spacing-lg;
+        height: $map-height-mobile;
+        min-height: $map-min-height-mobile;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        margin-bottom: $spacing-xl;
+    }
+
+    .api-key-management {
+        flex-direction: column;
+        align-items: stretch;
+        gap: $spacing-lg;
+    }
+
+    .radius-control {
+        justify-content: center;
+    }
+
+    .api-key-section {
+        justify-content: center;
+    }
+
+    .radius-label {
+        font-size: 11px;
+    }
+
+    .radius-input {
+        width: 50px;
+    }
+}

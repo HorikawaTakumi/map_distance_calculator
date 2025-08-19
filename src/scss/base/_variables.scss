@@ -1,0 +1,76 @@
+// Colors
+$primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$primary-color: #667eea;
+$secondary-color: #764ba2;
+$success-color: #28a745;
+$success-hover: #1e7e34;
+$danger-color: #dc3545;
+$danger-hover: #c82333;
+$secondary-btn-color: #6c757d;
+$secondary-btn-hover: #5a6268;
+$error-color: #e53e3e;
+$error-bg: #fed7d7;
+$warning-color: #c53030;
+
+// Typography
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-size-base: 16px;
+$font-size-small: 12px;
+$font-size-large: 1.8em;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 10px;
+$spacing-lg: 15px;
+$spacing-xl: 20px;
+$spacing-xxl: 30px;
+
+// Border radius
+$border-radius-sm: 3px;
+$border-radius-md: 4px;
+$border-radius-lg: 8px;
+$border-radius-xl: 15px;
+
+// Borders
+$border-width: 1px;
+$border-width-thick: 2px;
+$border-color-light: #e2e8f0;
+$border-color-gray: #ced4da;
+
+// Backgrounds
+$bg-white: white;
+$bg-light: #f7fafc;
+$bg-gray: #f8f9fa;
+$bg-coordinate: #edf2f7;
+$bg-method: #e8f5e8;
+$bg-key-display: #e9ecef;
+
+// Text colors
+$text-primary: #333;
+$text-secondary: #4a5568;
+$text-tertiary: #2d3748;
+$text-muted: #6c757d;
+$text-method: #2d5016;
+
+// Shadows
+$shadow-container: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+// Breakpoints
+$mobile-max: 480px;
+$tablet-height-max: 600px;
+$small-height-max: 700px;
+
+// Map specific
+$map-height-default: 400px;
+$map-height-small: 250px;
+$map-height-mobile: 300px;
+$map-min-height: 300px;
+$map-min-height-small: 200px;
+$map-min-height-mobile: 250px;
+
+// API management
+$api-container-min-height: 250px;
+$api-container-min-height-small: 180px;

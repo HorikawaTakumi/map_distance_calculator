@@ -1,0 +1,18 @@
+[project]
+name = "map-distance-calculator"
+version = "1.0.0"
+description = "A web-based distance calculator using Japanese address geocoding"
+authors = [{name = "User"}]
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.0.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flask[dotenv]",
+]
+
+[tool.uv]
+dev-dependencies = []

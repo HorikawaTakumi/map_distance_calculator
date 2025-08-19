@@ -1,0 +1,47 @@
+@use '../base/variables' as *;
+
+.api-key-management {
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-xl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+
+    &.hidden {
+        display: none;
+    }
+}
+
+.radius-control {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    flex: 1;
+}
+
+.radius-input {
+    width: 60px;
+    padding: $spacing-xs 6px;
+    border: $border-width solid $border-color-gray;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-small;
+    text-align: center;
+
+    &:focus {
+        outline: none;
+        border-color: $primary-color;
+    }
+}
+
+.radius-label {
+    font-size: $font-size-small;
+    color: $text-muted;
+    white-space: nowrap;
+}
+
+.api-key-section {
+    display: flex;
+    align-items: center;
+}

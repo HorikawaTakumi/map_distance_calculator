@@ -1,0 +1,97 @@
+@use '../base/variables' as *;
+
+.btn-primary {
+    padding: $spacing-md $spacing-xl;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: $border-radius-md;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+        background: #0056b3;
+    }
+}
+
+.btn-success {
+    flex: 1;
+    padding: $spacing-md;
+    background: $success-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius-md;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+        background: $success-hover;
+    }
+}
+
+.btn-danger {
+    flex: 1;
+    padding: $spacing-md;
+    background: $danger-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius-md;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+        background: $danger-hover;
+    }
+}
+
+.btn-secondary {
+    padding: $spacing-sm $spacing-lg;
+    background: $secondary-btn-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius-md;
+    cursor: pointer;
+    font-size: $font-size-small;
+
+    &:hover {
+        background: $secondary-btn-hover;
+    }
+}
+
+.btn-apply {
+    padding: $spacing-xs 6px;
+    background: $success-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    font-size: 11px;
+    white-space: nowrap;
+    width: auto;
+    min-width: auto;
+
+    &:hover {
+        background: $success-hover;
+    }
+}
+
+.api-key-btn {
+    padding: $spacing-xs $spacing-sm;
+    background: $secondary-btn-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    font-size: 11px;
+    width: auto;
+    min-width: 80px;
+
+    &:hover {
+        background: $secondary-btn-hover;
+    }
+}
+
+.btn-row {
+    display: flex;
+    gap: $spacing-md;
+}
