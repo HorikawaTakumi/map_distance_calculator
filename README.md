@@ -138,12 +138,6 @@ cat src/js/**/*.js | terser -c -m -o dist/app.min.js
 sass src/scss/main.scss --style=compressed | cleancss -o dist/style.min.css
 ```
 
-### 最適化
-
-- **中間ファイル不要** - パイプライン処理で直接出力
-- **モジュール分割** - 保守性向上
-- **自動ミニファイ** - 本番環境対応
-
 ## 📐 距離計算について
 
 本アプリケーションは以下の優先順位で距離を計算します：
@@ -159,27 +153,3 @@ sass src/scss/main.scss --style=compressed | cleancss -o dist/style.min.css
 - **HTTPS対応** - 自己署名証明書による暗号化通信
 - **APIプロキシ** - Mixed Contentエラー回避
 - **証明書管理** - `.certs/`フォルダ（gitignore済み）
-
-## 🤝 開発・カスタマイズ
-
-### カスタマイズポイント
-
-- `src/scss/base/_variables.scss` - 色・サイズ・レスポンシブ設定
-- `src/js/config/constants.js` - デフォルト住所・API URL
-- `server.py` - サーバー設定・ポート変更
-
-### コード品質
-
-- **モジュール化** - 機能ごとに分離されたファイル構成
-- **SCSS変数** - 一元的なデザイン管理
-- **エラーハンドリング** - APIエラー・ネットワークエラー対応
-
-## 📝 ライセンス
-
-MIT License
-
-## 🙏 謝辞
-
-- 国土地理院 - 住所検索API・測量計算API
-- Google Maps Platform - 地図API
-- Flask・SCSS・各種ライブラリ開発者の皆様
