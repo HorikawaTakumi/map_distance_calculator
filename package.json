@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "clean-css-cli": "^5.6.3",
+    "ngrok": "^5.0.0-beta.2",
     "sass": "^1.69.0",
     "terser": "^5.43.1"
   },
@@ -9,6 +10,7 @@
     "build:css": "npx sass src/scss/main.scss --style=compressed --no-source-map | npx cleancss -o dist/style.min.css",
     "build": "npm run build:js && npm run build:css",
     "clean": "rm -f dist/app.js dist/style.css dist/style.css.map",
+    "ngrok": "node start-with-ngrok.js",
     "dev": "eval \"$(~/.local/bin/mise activate zsh)\" && uv run python server.py",
     "start": "npm run build && npm run dev"
   }
