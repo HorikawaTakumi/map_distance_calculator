@@ -10,7 +10,7 @@
     "build:css": "npx sass src/scss/main.scss --style=compressed --no-source-map | npx cleancss -o dist/style.min.css",
     "build": "npm run build:js && npm run build:css",
     "clean": "rm -f dist/app.js dist/style.css dist/style.css.map",
-    "ngrok": "node start-with-ngrok.js",
+    "ngrok": "npm run build && node start-with-ngrok.js",
     "dev": "eval \"$(~/.local/bin/mise activate zsh)\" && uv run python server.py",
     "start": "npm run build && npm run dev"
   }
