@@ -131,7 +131,7 @@ function loadGoogleMapsAPI() {
     const script = document.createElement('script');
     script.async = true;
     script.defer = true;
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${getApiKey()}&callback=initMap&libraries=geometry&language=ja`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${getApiKey()}&loading=async&callback=initMap&libraries=geometry&language=ja`;
     script.onerror = function () {
         console.error('Google Maps APIの読み込みに失敗しました');
         const mapDiv = document.getElementById('map');
