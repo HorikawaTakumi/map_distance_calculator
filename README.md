@@ -46,6 +46,10 @@ npm run build:js    # JavaScript
 npm run build:css   # SCSS → CSS
 ```
 
+### 各種設定値
+
+src/js/config/constants.js
+
 ## 🌐 アクセス
 
 - **HTTPS**: <https://localhost:3000> （推奨）
