@@ -48,7 +48,8 @@ npm run build:css   # SCSS → CSS
 
 ### 各種設定値
 
-src/js/config/constants.js
+path: `src/js/config/constants.js`
+https://github.com/HorikawaTakumi/map_distance_calculator/blob/main/src/js/config/constants.js
 
 ## 🌐 アクセス
 
